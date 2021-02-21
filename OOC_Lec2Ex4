@@ -1,0 +1,44 @@
+//Exercise 04
+
+//Modify the program to input details of 3 customers and calculate the total discount amount given.
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{ 
+  //for loop to run this process 3 times to ask 3 customers to enter the price  
+  fo/r(int x=1;x<=3;x++){
+
+   float price = 0 ;
+   float discount = 0 ;
+   cout << "Enter the total price:"<< endl;
+   cin >> price;
+  
+   //Check whether the price is lower than 3000
+   if (price>=3000){
+    
+    //Calculate discounts for the prices over 3000
+     if ((price>=3000) && (price<5000))
+      discount = (price * 10/100) ;
+
+     else if ((price>=5000) && (price<10000)) 
+      discount = (price * 15/100) ;
+
+     else 
+      discount = (price*25/100) ;
+
+     cout <<"Discount: "<< setiosflags (ios::fixed) << setprecision(2)<< discount << endl; 
+     cout<<endl; 
+     }
+   else 
+    {
+      cout<<"No discount  ";
+      cout<<endl;
+    }
+
+    cout<<endl;  
+  } 
+
+  return 0;    
+ }
