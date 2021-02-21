@@ -1,0 +1,35 @@
+//Exercise 03
+
+/*Display number 1000,900,800,700,… 100
+Using a while loop, do while loop and a for loop within the same program.*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int x=1000;
+  //while loop
+  while (x>=100)
+   {
+    cout<<x<<endl;
+    x-=100;
+   }
+  cout<<endl;
+
+  //do while loop
+   x=1000;
+   do
+   {
+    cout<<x<<endl;
+    x-=100;
+   }while(x>=100);
+
+  cout<<endl;
+
+  //for loop
+  for(x=1000;x>=100;x-=100)
+   {
+     cout<<x<<endl;
+   }
+  return 0; 
+}
